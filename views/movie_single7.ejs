@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  
+  <% include partials/head.ejs %>
+
+</head>
+<body>
+
+	<% include partials/header.ejs %>
+
+	<div id="hero-image-single" style="background-image: url('/images/death_star_image.jpg');">
+		<h1 id="hero-title"><%= title %></h1>
+	</div>
+
+
+  <div>
+    <a href="https://plot.ly/~siebenwa/38/" target="_blank" title="Delay by Airport Size" style="display: block; text-align: center;"><img src="https://plot.ly/~siebenwa/38.png" alt="Delay by Airport Size" style="max-width: 100%;width: 600px;"  width="600" onerror="this.onerror=null;this.src='https://plot.ly/404.png';" /></a>
+    <script data-plotly="siebenwa:38" src="https://plot.ly/embed.js" async></script>
+</div>
+
+<div>
+    <a href="https://plot.ly/~siebenwa/46/" target="_blank" title="Delay by Population Density" style="display: block; text-align: center;"><img src="https://plot.ly/~siebenwa/46.png" alt="Delay by Population Density" style="max-width: 100%;width: 600px;"  width="600" onerror="this.onerror=null;this.src='https://plot.ly/404.png';" /></a>
+    <script data-plotly="siebenwa:46" src="https://plot.ly/embed.js" async></script>
+</div>
+
+<div>
+    <a href="https://plot.ly/~siebenwa/44/" target="_blank" title="US Population Density" style="display: block; text-align: center;"><img src="https://plot.ly/~siebenwa/44.png" alt="US Population Density" style="max-width: 100%;width: 600px;"  width="600" onerror="this.onerror=null;this.src='https://plot.ly/404.png';" /></a>
+    <script data-plotly="siebenwa:44" src="https://plot.ly/embed.js" async></script>
+</div>
+
+
+	<div class="content-padding clearfix">
+
+   
+		<div class="poster-wrapper">
+  		<img src="/images/7.PNG" class="img-responsive">
+  	</div>
+
+  	<div class="description-wrapper">
+  		
+  		<div class="description">
+  			<h2 class="movie-header">Description</h2>
+  			<p>These graphs summarize the population density statistics of the United States and their effects on domestic US flights in 2015. The Delay by Airport Size chart plots the average departure delay for each airport against the number of flights passing through the airport. The Delay by Population Density chart plots the average departure delay for each airport against the population density of the area around the airport. The US Population Density map displays a select number of points from across the United States to give a glimpse at the population distribution.</p>
+  		</div>
+
+
+  	</div>
+
+	</div>
+
+
+
+  <% include partials/footer.ejs %>
+
+  <% include partials/scripts.ejs %>
+
+</body>
+</html>

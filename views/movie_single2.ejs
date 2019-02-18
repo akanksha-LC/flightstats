@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  
+  <% include partials/head.ejs %>
+
+</head>
+<body>
+
+	<% include partials/header.ejs %>
+
+	<div id="hero-image-single" style="background-image: url('/images/death_star_image.jpg');">
+		<h1 id="hero-title"><%= title %></h1>
+	</div>
+
+  <div>
+    <a href="https://plot.ly/~nihaalgeorge/18/" target="_blank" title="CancelledFlightsRoutes" style="display: block; text-align: center;"><img src="https://plot.ly/~nihaalgeorge/18.png" alt="CancelledFlightsRoutes" style="max-width: 100%;width: 600px;"  width="600" onerror="this.onerror=null;this.src='https://plot.ly/404.png';" /></a>
+    <script data-plotly="nihaalgeorge:18" src="https://plot.ly/embed.js" async></script>
+</div>
+
+<div>
+    <a href="https://plot.ly/~nihaalgeorge/30/" target="_blank" title="Cancellation Percentage by Route" style="display: block; text-align: center;"><img src="https://plot.ly/~nihaalgeorge/30.png" alt="Cancellation Percentage by Route" style="max-width: 100%;width: 600px;"  width="600" onerror="this.onerror=null;this.src='https://plot.ly/404.png';" /></a>
+    <script data-plotly="nihaalgeorge:30" src="https://plot.ly/embed.js" async></script>
+</div>
+
+<div>
+    <a href="https://plot.ly/~nihaalgeorge/26/" target="_blank" title="Total Cancellations by Route" style="display: block; text-align: center;"><img src="https://plot.ly/~nihaalgeorge/26.png" alt="Total Cancellations by Route" style="max-width: 100%;width: 600px;"  width="600" onerror="this.onerror=null;this.src='https://plot.ly/404.png';" /></a>
+    <script data-plotly="nihaalgeorge:26" src="https://plot.ly/embed.js" async></script>
+</div>
+
+
+
+	<div class="content-padding clearfix">
+
+   
+		<div class="poster-wrapper">
+  		<img src="/images/2.PNG" class="img-responsive">
+  	</div>
+
+  	<div class="description-wrapper">
+  		
+  		<div class="description">
+  			<h2 class="movie-header">Description</h2>
+  			<p>These graphs summarize the cancellations on domestic US flights in 2015 by route. The total cancellations by route plots the total number of cancelled flights on each route, irrespective of direction travelled. The percentage cancellations by route plots the percentage of flights along that route that were cancelled, irrespective of direction. The map plots the routes (irrespective of direction), that had over 100 total cancellations in 2015, along with the total number of cancellations and the percentage of cancelled flights.</p>
+  		</div>
+
+
+  	</div>
+
+	</div>
+
+
+
+  <% include partials/footer.ejs %>
+
+  <% include partials/scripts.ejs %>
+
+</body>
+</html>

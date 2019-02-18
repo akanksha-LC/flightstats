@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  
+  <% include partials/head.ejs %>
+
+</head>
+<body>
+
+	<% include partials/header.ejs %>
+
+	<div id="hero-image-single" style="background-image: url('/images/death_star_image.jpg');">
+		<h1 id="hero-title"><%= title %></h1>
+	</div>
+
+  <div>
+    <a href="https://plot.ly/~nihaalgeorge/28/" target="_blank" title="CancelledAirports" style="display: block; text-align: center;"><img src="https://plot.ly/~nihaalgeorge/28.png" alt="CancelledAirports" style="max-width: 100%;width: 600px;"  width="600" onerror="this.onerror=null;this.src='https://plot.ly/404.png';" /></a>
+    <script data-plotly="nihaalgeorge:28" src="https://plot.ly/embed.js" async></script>
+</div>
+
+<div>
+    <a href="https://plot.ly/~nihaalgeorge/24/" target="_blank" title="Cancellation Percentage by Airport" style="display: block; text-align: center;"><img src="https://plot.ly/~nihaalgeorge/24.png" alt="Cancellation Percentage by Airport" style="max-width: 100%;width: 600px;"  width="600" onerror="this.onerror=null;this.src='https://plot.ly/404.png';" /></a>
+    <script data-plotly="nihaalgeorge:24" src="https://plot.ly/embed.js" async></script>
+</div>
+
+<div>
+    <a href="https://plot.ly/~nihaalgeorge/22/" target="_blank" title="Total Cancellations by Airport" style="display: block; text-align: center;"><img src="https://plot.ly/~nihaalgeorge/22.png" alt="Total Cancellations by Airport" style="max-width: 100%;width: 600px;"  width="600" onerror="this.onerror=null;this.src='https://plot.ly/404.png';" /></a>
+    <script data-plotly="nihaalgeorge:22" src="https://plot.ly/embed.js" async></script>
+</div>
+
+
+	<div class="content-padding clearfix">
+
+   
+		<div class="poster-wrapper">
+  		<img src="/images/4.PNG" class="img-responsive">
+  	</div>
+
+  	<div class="description-wrapper">
+  		
+  		<div class="description">
+  			<h2 class="movie-header">Description</h2>
+  			<p>These graphs summarize the delay on domestic US flights in 2015 by airport of departure. The total cancellations by airport plots the total number of cancelled flights scheduled to depart from each airport. The percentage cancellations by airport plots the percentage of flights scheduled to depart from each airport that were cancelled. The map plots each airport with its total number of cancelled flights and percentage of flights cancelled in 2015.</p>
+  		</div>
+
+
+  	</div>
+
+	</div>
+
+
+
+  <% include partials/footer.ejs %>
+
+  <% include partials/scripts.ejs %>
+
+</body>
+</html>

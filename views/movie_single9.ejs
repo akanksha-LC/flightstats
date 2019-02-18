@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  
+  <% include partials/head.ejs %>
+
+</head>
+<body>
+
+	<% include partials/header.ejs %>
+
+	<div id="hero-image-single" style="background-image: url('/images/death_star_image.jpg');">
+		<h1 id="hero-title"><%= title %></h1>
+	</div>
+
+  <div>
+    <a href="https://plot.ly/~siebenwa/18/" target="_blank" title="Cancellations by Month" style="display: block; text-align: center;"><img src="https://plot.ly/~siebenwa/18.png" alt="Cancellations by Month" style="max-width: 100%;width: 600px;"  width="600" onerror="this.onerror=null;this.src='https://plot.ly/404.png';" /></a>
+    <script data-plotly="siebenwa:18" src="https://plot.ly/embed.js" async></script>
+</div>
+
+<div>
+    <a href="https://plot.ly/~siebenwa/32/" target="_blank" title="Cancellations by Day of Week" style="display: block; text-align: center;"><img src="https://plot.ly/~siebenwa/32.png" alt="Cancellations by Day of Week" style="max-width: 100%;width: 600px;"  width="600" onerror="this.onerror=null;this.src='https://plot.ly/404.png';" /></a>
+    <script data-plotly="siebenwa:32" src="https://plot.ly/embed.js" async></script>
+</div>
+
+<div>
+    <a href="https://plot.ly/~siebenwa/30/" target="_blank" title="Flights by Day" style="display: block; text-align: center;"><img src="https://plot.ly/~siebenwa/30.png" alt="Flights by Day" style="max-width: 100%;width: 600px;"  width="600" onerror="this.onerror=null;this.src='https://plot.ly/404.png';" /></a>
+    <script data-plotly="siebenwa:30" src="https://plot.ly/embed.js" async></script>
+</div>
+
+<div>
+    <a href="https://plot.ly/~siebenwa/20/" target="_blank" title="Cancellations by Day" style="display: block; text-align: center;"><img src="https://plot.ly/~siebenwa/20.png" alt="Cancellations by Day" style="max-width: 100%;width: 600px;"  width="600" onerror="this.onerror=null;this.src='https://plot.ly/404.png';" /></a>
+    <script data-plotly="siebenwa:20" src="https://plot.ly/embed.js" async></script>
+</div>
+
+
+	<div class="content-padding clearfix">
+
+   
+		<div class="poster-wrapper">
+  		<img src="/images/9.PNG" class="img-responsive">
+  	</div>
+
+  	<div class="description-wrapper">
+  		
+  		<div class="description">
+  			<h2 class="movie-header">Description</h2>
+  			<p>These graphs summarize the cancellations of domestic US flights in 2015 by different measures of time. The Cancellations by Month chart plots the number of cancellations for each month of the year. The Cancellations by Day of Week chart plots the number of cancellations for each day of the week. The Flights by Day chart shows the number of domestic flights in the US for each day in 2015, and the Cancellations by Day chart shows the number of cancelled domestic flights in the US for each day in 2015.</p>
+  		</div>
+
+
+  	</div>
+
+	</div>
+
+
+  <% include partials/footer.ejs %>
+
+  <% include partials/scripts.ejs %>
+
+</body>
+</html>

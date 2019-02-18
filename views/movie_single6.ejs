@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  
+  <% include partials/head.ejs %>
+
+</head>
+<body>
+
+	<% include partials/header.ejs %>
+
+	<div id="hero-image-single" style="background-image: url('/images/death_star_image.jpg');">
+		<h1 id="hero-title"><%= title %></h1>
+	</div>
+
+
+  <div>
+    <a href="https://plot.ly/~siebenwa/42/" target="_blank" title="WeatherDelayAvgs" style="display: block; text-align: center;"><img src="https://plot.ly/~siebenwa/42.png" alt="WeatherDelayAvgs" style="max-width: 100%;width: 600px;"  width="600" onerror="this.onerror=null;this.src='https://plot.ly/404.png';" /></a>
+    <script data-plotly="siebenwa:42" src="https://plot.ly/embed.js" async></script>
+</div>
+
+<div>
+    <a href="https://plot.ly/~siebenwa/40/" target="_blank" title="AvgDelayWithWeatherAndCount" style="display: block; text-align: center;"><img src="https://plot.ly/~siebenwa/40.png" alt="AvgDelayWithWeatherAndCount" style="max-width: 100%;width: 600px;"  width="600" onerror="this.onerror=null;this.src='https://plot.ly/404.png';" /></a>
+    <script data-plotly="siebenwa:40" src="https://plot.ly/embed.js" async></script>
+</div>
+
+
+
+	<div class="content-padding clearfix">
+
+   
+		<div class="poster-wrapper">
+  		<img src="/images/6.PNG" class="img-responsive">
+  	</div>
+
+  	<div class="description-wrapper">
+  		
+  		<div class="description">
+  			<h2 class="movie-header">Description</h2>
+  			<p>These graphs summarize the effects weather had on domestic US flights in 2015. The Average Weather Delays by Condition chart plots the average delay time caused by each weather attribute. The Departing Temperature vs Flight Count with Average Delay plot displays the effects temperature has on the delay of a flight and the number of flights that departed at each temperature.</p>
+  		</div>
+
+
+  	</div>
+
+	</div>
+
+
+
+  <% include partials/footer.ejs %>
+
+  <% include partials/scripts.ejs %>
+
+</body>
+</html>

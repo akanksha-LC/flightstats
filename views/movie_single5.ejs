@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  
+  <% include partials/head.ejs %>
+
+</head>
+<body>
+
+	<% include partials/header.ejs %>
+
+	<div id="hero-image-single" style="background-image: url('/images/death_star_image.jpg');">
+		<h1 id="hero-title"><%= title %></h1>
+	</div>
+
+  <div>
+    <a href="https://plot.ly/~siebenwa/22/" target="_blank" title="Delay Percentages by Airline" style="display: block; text-align: center;"><img src="https://plot.ly/~siebenwa/22.png" alt="Delay Percentages by Airline" style="max-width: 100%;width: 600px;"  width="600" onerror="this.onerror=null;this.src='https://plot.ly/404.png';" /></a>
+    <script data-plotly="siebenwa:22" src="https://plot.ly/embed.js" async></script>
+</div>
+
+
+
+
+	<div class="content-padding clearfix">
+
+   
+		<div class="poster-wrapper">
+  		<img src="/images/5.PNG" class="img-responsive">
+  	</div>
+
+  	<div class="description-wrapper">
+  		
+  		<div class="description">
+  			<h2 class="movie-header">Description</h2>
+  			<p>These graphs summarize the delay and cancellation statistics by airline for domestic US flights in 2015. The delay percentages by airline chart plots the average departure and arrival delays for each airline. The cancellations by airline chart plots the percentage of flights that were cancelled for each airline.</p>
+  		</div>
+
+
+  	</div>
+
+	</div>
+
+
+
+  <% include partials/footer.ejs %>
+
+  <% include partials/scripts.ejs %>
+
+</body>
+</html>
